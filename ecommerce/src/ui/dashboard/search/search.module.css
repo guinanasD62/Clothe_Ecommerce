@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #98afe1;
+    padding: 10px;
+    border-radius: 10px;
+    width: 70%; 
+    /* max-content; */
+  }
+  
+  .input {
+    background-color: transparent;
+    border: none;
+    color: var(--text);
+    outline: none;
+  }

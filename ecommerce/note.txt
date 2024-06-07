@@ -1,0 +1,120 @@
+
+/*
+//direct manager 
+
+PMS dashboard
+
+4attibutes
+orgnization goal 15%
+department/ team goal 40%
+individula goal 35%
+development goal 10%
+
+OKR
+
+SMART
+
+*/
+
+============================================================
+============================================================
+================
+Next.js MongoDB 
+Next.js 14 How to Fetch Data? (Next.js 14 Data Fetching)
+
+c free cluster, network access add ip address|| server address
+> define schema and types > npm i mongoose 
+>connect DB and c models > mongoosejs.com > connection
+> app/lib/utils.js > c connection method
+async means you can use trycatch, 
+>> import mongoose> export const connectToDB = async () => { try{ await monggose.connect()}
+catch(error){throw new Error(error)}}
+
+// if db exist use: if not create new connection
+
+> inside the function> const connection ={};
+> inside the trycatch if(connection.isConnected) return; //don't connect
+>const db = await ...; connection.isConnected = db.connections[0].readyState
+> if ever, .env and .gitignore
+process.env.Mongo
+
+> c lib/models and define your model schema
+> c lib/data.js controller  fetchAllUsers, fetchOneUser, UpdateUser, DeleteUser
+> async try catch> awaits User.find()
+> apply in where the table > asyng const users = await fetchUser();
+>
+             {users.map((user) => (
+            <tr key={user.id}>
+
+
+> RR next.config.js   images>protocol> hostname 
+
+============================================================
+============================================================
+Next.js 14 Server Actions Tutorial
+
+test server actions - c a test
+test/page.jsx
+component > input, usestate> client component> 
+> set method> onChange> utton onClick
+
+instead no client component , no listener
+>
+handleForm > async > "use server"
+form action function handleForm 
+input type="text" name="username"
+button
+
+//collect the data from fomr and send to mongo db
+//RR: form data is an object
+lib> action>addUser = fromDate.get
+add user  >async > try catch
+export const addUser = async (formData) => {
+
+    // const username  = formData.get("username") // instead of writing them one by one we can re constructure then
+    const { username, email, password, phone, address, isAdmin, isActive } = 
+    Object.fromEntries(formData);
+>try
+    connectToDb();
+     const newUser = new User ({ ...})await newUser.save();
+
+>end of catch
+ revalidatePath("/dashboard/users"); // no need to use usequery || swrr
+    redirect("/dashboard/users");
+};
+
+after edit dashboard/user/add/page.tsx <form action={addUser}
+
+============================================================
+============================================================
+Next.js 14 Delete Item and Revalidate the Fetched Data
+
+actions > deleteProduct
+findByIdAndDelete<
+>> in buttons  > 
+<form action={deleteuser}>
+<input type="hidden" name="id value={user.id}/>
+<button> delete </></>
+
+============================================================
+============================================================
+
+RR
+ lib/action >> Add, delete, update
+ lib/data >> fetchAllData, fetchDataById
+
+============================================================
+============================================================
+// image and quantity for now is important and the orders orders like customer has placed any orders for this OK.
+// redux
+
+============================================================
+============================================================
+
+Setting Up Redux:
+
+Install Redux and React-Redux.
+Create a Redux store.
+Define actions and action creators. > Create reducers to handle actions.
+Connect the Redux store to your React application in index.js
+using redux in component

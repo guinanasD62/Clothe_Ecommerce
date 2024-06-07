@@ -1,0 +1,232 @@
+https://www.youtube.com/watch?v=b8ZUb_Okxro&list=WL&index=2&t=475s
+
+npm init -y
+
+npm install -D typescript
+
+npm i ts-node
+
+npm i -D nodemon
+
+tsconfig.json  -paste
+
+nodemon.json  -paste
+
+ "scripts": {
+    "start": "nodemon", }
+
+c fd src > fl index.ts
+>> check if working
+
+paste index,ts 
+
+express cors body-parser cookie-parser compression mongoose
+
+-D @types/express @types/cors @types/body-parser @types/cookie-parser @types/compression @types/mongoose
+
+npm i bcrypt jsonwebtoken
+
+>> create model schema
+
+in video > Helpers for authentication > uthentication controllers
+
+
+
+//multer to be study
+//useReducer
+//Redux
+
+boilerplate
+
+https://www.youtube.com/watch?v=kK_Wqx3RnHk
+
+import React, {useState}
+>
+ const [count, setCount] = useState(0)
+
+function increment(){
+setCount(prevCount => prevCount + 1)
+}
+
+function decrement(){
+setCount(prevCount => prevCount - 1)
+}
+
+<button onClick={decrement}> - <button>
+{count}
+<button onClick={increment}> + <button>
+
+==
+RR RR
+
+redux - provider
+
+root layout and insert <ReduxProvider>
+
+create store
+
+create slice > reducer > actions > 
+|| import ang component na gamitan sa reducer
+
+components > import 
+import { useSelector, useDispatch } from 'react-redux'; || default
+import { RootState } from '@/redux/store';
+import { selectCartCount, selectTotalPrice, removeFromCart } from '@/redux/customerSlice/cartReducer';
+
+>dispatch
+
+loading 
+add to cart 
+multer
+redux
+
+//
+api to redux thunk 
+
+
+axios
+please create a function that get my products from my mongodb using axios , please use my express server api 
+
+this is my product page ||  api controller model route
+
+///update the UsersPage component to use Axios directly within the component to fetch users.
+please use types ts
+
+inventory
+order modelschema | controller | route express api crud
+
+axios post order
+
+
+axios get 
+
+redux thunk
+
+
+5/28/24
+front end
+npx create-next-app@latest my-nextjs-app
+
+i  want to implement my redux thunk to my reducer 
+
+use debounce lib 
+npm i use-debounce
+table fetch, model controller, search components
+
+
+ERRROR >
+https://www.youtube.com/watch?v=BpXaVQSdo_E&list=PLY3G1ecsDWQKmUBe2KRH58cOBFTQHKKaO&index=16
+https://codewitharjun.com/restful-crud-using-node-js-express-js-mongodb/
+i really dont know what tutorial to follow
+////////////////////////////////////////////////////////////
+https://www.youtube.com/watch?v=5Vxx5UkjV4s
+nodejs bexrjs express
+
+server and client 
+
+npx create-next-app@latest my-nextjs-app
+
+npm init -y
+
+dependecies
+npm i express nodemon --save-dev
+
+packeage.json
+scripts: start : node server
+dev: nodemon server
+//creating backend
+express, app. port 
+
+cors is needed to allow us recieve api call from backend
+npm i cors
+app.use cors 
+
+use effect, useState to storee display
+
+
+https://www.youtube.com/watch?v=ZEKBDXGnD4s
+// axious  api request
+npm i axios
+
+
+
+////////////////////////////////////////////////////////////
+https://www.youtube.com/watch?v=_7UQPve99r4&list=PLY3G1ecsDWQKmUBe2KRH58cOBFTQHKKaO&index=14
+CRUD API Tutorial – Node, Express, MongoDB
+
+npm init -y
+>
+index.js
+>
+package.json
+   "serve": "node index.js",
+       "start": "nodemon src/index.ts",
+// npm run serve 
+// npm start
+>
+intall framework
+  
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/body-parser": "^1.19.5",
+    "@types/compression": "^1.7.5",
+    "@types/cookie-parser": "^1.4.7",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/mongoose": "^5.11.97",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "bson": "^6.7.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.0",
+    "ts-node": "^10.9.2"
+  }
+>
+edit index.js
+>
+>
+model controller routes 
+>
+
+
+Actual password 
+decode from cyprted 
+
+add button
+
+icons 
+visible not visible
+
+
+
+fix the error 
+
+5/30 meeting 
+tutorial 
+
+/
+3/6/24
+rule base access control
+creating a pllain password updating api and 
+//
+
+restaurant
+foodname
+recipes
+price 
+quantity
+img
+
+restaurant
+owner: id
+
+

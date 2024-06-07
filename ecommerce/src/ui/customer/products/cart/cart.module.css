@@ -1,0 +1,75 @@
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 30px;
+  border: 2px solid #2e374a;
+  margin-top: 20px;
+  /* height: max-content; */
+
+}
+
+.tableTitle{
+  background-color: #5d57c9;
+  color: #f8f6f6;
+  padding: 20px;
+  text-align: center;
+  height: 60px;
+  padding-top: 15px;
+  font-size: 25px;
+  border-radius: 15px;
+}
+
+.userItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.td{
+  align-items: center;
+  padding: 20px;
+  padding-right:100px;
+  
+}
+.userItem:last-child {
+  border-bottom: none;
+}
+
+.removeButton{
+  color: #5d57c9;
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: 20px;
+}
+.removeButton:hover {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size:20px;
+}
+
+.checkOutBtn{
+  background-color: #5d57c9;
+  color: #f8f6f6;
+  padding: 10px;
+  text-align: center;
+  height: 60px;
+  padding-top: 15px;
+  font-size: 15px;
+  border-radius: 15px;
+  justify-content: right;
+}
+
+.total{
+  align-items: left ;
+  padding: 20px;
+  padding-right:100px;
+  
+}

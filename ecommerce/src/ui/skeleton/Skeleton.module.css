@@ -1,0 +1,57 @@
+
+.table{
+  width: 100%;
+}
+
+.skeleton {
+  background-color: #eee;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.skeletonText {
+  height: 16px;
+  width: 100px;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeletonTitle {
+  height: 50px;
+  width: 900px;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+.skeletonBtn {
+  display: inline-block;
+  height: 34px;
+  width: 70px;
+  padding: 10px;
+  margin: 5px;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeletonImg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.container{
+  padding-top: 8%;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: #eee;
+  }
+  50% {
+    background-color: #ddd;
+  }
+  100% {
+    background-color: #eee;
+  }
+}
